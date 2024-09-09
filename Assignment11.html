@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2:hover {
+        color: red;
+      }
+      .tooltip {
+        position: relative;
+        display: inline;
+        border-bottom: 1px dotted black;
+      }
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        float:right;
+        clear:right;
+        position:relative;
+        left:20px;
+        top:30px;
+        border-radius: 6px;
+        padding: 5px ;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+      .tooltip1 {
+        position: relative;
+        display: inline;
+        border-bottom: 1px dotted black;
+      }
+      .tooltip1 .tooltiptext1 {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        float:right;
+        clear:right;
+        position:relative;
+        left:20px;
+        top:30px;
+        border-radius: 6px;
+        padding: 5px ;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+      }
+      .tooltip1:hover .tooltiptext1 {
+        visibility: visible;
+      }
+      input:focus{
+        background-color: pink;
+        border:3px solid red;
+        box-shadow: 3px -3px blue;
+      }
+      .Chess{
+    border:3px solid black;
+    height: 70vh;
+    width: 50vw;
+    
+    
+  }
+  .square{
+    height: 12.5%;
+    width:12.5%;
+    float:left;
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .white{
+    /*background-color: #fff;*/
+    float: left;
+    width: 12.5%;
+    height: 12.5%;
+    background-color: white;
+    font-size:50px;
+    text-align:center;
+    display: table-cell;
+    vertical-align:middle;
+   
+  }
+  .white:hover{
+    background-color: orange;
+  }
+  .black{
+    /*background-color: black;*/
+    float: left;
+    width: 12.5%;
+    height: 12.5%;
+    background-color: skyblue;
+    font-size:50px;
+    text-align:center;
+    display: table-cell;
+    vertical-align:middle;
+  }
+  .black:hover{
+    background-color: rgb(176, 58, 11);
+  }
+    </style>
+  </head>
+  <body>
+    <center><h2>Login</h2>
+    <form>
+      <label for="UserName">Username:</label>
+      
+      <div class="tooltip">
+        <input type="text" name="username" id="username" />
+        
+        <center><span class="tooltiptext">Enter Username mandatory field</span></center><br /><br />
+      </div>
+
+      <label for="pswd">Password:</label>
+      
+      <div class="tooltip1">
+        <input type="text" name="pswd" id="password" />
+        <center><span class="tooltiptext1">Enter password using alpha numeric</span></center><br /><br />
+    </div>
+    <button type="submit">Submit</button>
+    <hr>    
+    </div>
+      </form></center>
+
+      <center> <h1>Chess Board</h1>
+    <div class="Chess">
+        <!--1th -->
+        <div class="square white">&#9820;</div>
+        <div class="square black">&#9822;</div>
+        <div class="square white">&#9821;</div>
+        <div class="square black">&#9819;</div>
+        <div class="square white">&#9818;</div>
+        <div class="square black">&#9821;</div>
+        <div class="square white">&#9822;</div>
+        <div class="square black">&#9820;</div>
+  
+        <!--2th -->
+        <div class="square black">&#9823;</div>
+        <div class="square white">&#9823;</div>
+        <div class="square black">&#9823;</div>
+        <div class="square white">&#9823;</div>
+        <div class="square black">&#9823;</div>
+        <div class="square white">&#9823;</div>
+        <div class="square black">&#9823;</div>
+        <div class="square white">&#9823;</div>
+  
+        <!--3th-->
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+  
+        <!--4th -->
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+  
+        <!--5th-->
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+  
+        <!--6th -->
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+  
+        <!--7th -->
+        <div class="square white">&#9817;</div>
+        <div class="square black">&#9817;</div>
+        <div class="square white">&#9817;</div>
+        <div class="square black">&#9817;</div>
+        <div class="square white">&#9817;</div>
+        <div class="square black">&#9817;</div>
+        <div class="square white">&#9817;</div>
+        <div class="square black">&#9817;</div>
+  
+        <!--8th -->
+        <div class="square black">&#9814;</div>
+        <div class="square white">&#9816;</div>
+        <div class="square black">&#9815;</div>
+        <div class="square white">&#9813;</div>
+        <div class="square black">&#9812;</div>
+        <div class="square white">&#9815;</div>
+        <div class="square black">&#9816;</div>
+        <div class="square white">&#9814;</div>
+          
+      </div></center>
+      
+  </body>
+</html>
